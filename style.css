@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+input[type="checkbox"]:checked+label{
+    color: gray;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+    
