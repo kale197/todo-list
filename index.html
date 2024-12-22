@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do list</title>
-</head>
-<body>
-    <form action="index.html">
-        <input type="checkbox" id="td1" name="td1" value="To-do 1">
-        <label for="td1">To-do 1</label><br>
-        <input type="checkbox" id="td2" name="td2" value="To-do 2">
-        <label for="td2">To-do 2</label><br>
-        <input type="checkbox" id="td3" name="td3" value="To-do 3">
-        <label for="td3">To-do 3</label><br>
-    </form>
-    <script src="main.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="todo-header">
+            <h2>To-do list</h2>
+            <img id="pad" src="/images/pad.png" height="40px" />
+       </div>
+       <div class="todo-body">
+        <input
+            type="text"
+            id="todoText"
+            class="todo-input"
+            placeholder="Add a to-do"
+        />
+        <img
+            src="/images/plus.png"
+            alt="+"
+            id="AddUpdateClick"
+            onclick="CreateToDoItems();"
+            height="40px"
+        />
+        </div>
+        <h5 id="Alert"></h5>
+        <ul id="list-items" class="list-items">
+            
+        </ul>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
